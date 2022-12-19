@@ -1,0 +1,8 @@
+name: playone
+host: client1
+task: 
+  - name: code to create a directory
+    file:
+     path: /opt/india
+     state: directory
+     
