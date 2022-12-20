@@ -1,5 +1,5 @@
 name: playone
-host: all
+host: client1
 task: 
   - name: code to create a directory
     file:
