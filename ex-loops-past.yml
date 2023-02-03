@@ -5,7 +5,11 @@
     - name: below is loop for yum intializations
       yum:
         name: "{{ item }}"
-        state: absent
+        state: present
       with_items:
       - git
       - docker
+    - name: install postgresql
+      ansible.builtin.yum:
+        name: postgresql
+        state: latest
