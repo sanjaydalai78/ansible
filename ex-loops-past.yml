@@ -5,7 +5,7 @@
     - name: below is loop for yum intializations
       yum:
         name: "{{ item }}"
-        state: present
+        state: absent
       with_items:
       - git
       - docker
