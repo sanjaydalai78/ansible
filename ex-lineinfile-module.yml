@@ -1,0 +1,13 @@
+-
+  name: playload
+  hosts: all
+  tasks:
+    - name: create a file if not exists
+      file:
+        path: /opt/india/russia.txt
+        state: touch
+    - name: write hello world
+      file:
+        path: /opt/india/russia.txt
+        line: 'HELLO WORLD!!!!'
+        state: present
