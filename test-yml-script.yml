@@ -1,6 +1,6 @@
 -
   name: playone
-  host: all
+  hosts: all
   tasks: 
     - name: code to create a directory
       file:
