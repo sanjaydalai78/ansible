@@ -1,0 +1,11 @@
+- 
+  name: pb on use case of loops
+  hosts: all
+  tasks:
+    - name: below is loop for yum intializations
+      yum:
+        name: "{{ item }}"
+        state: present
+      with_items:
+      - git
+      - docker
