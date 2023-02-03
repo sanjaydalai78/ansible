@@ -14,4 +14,4 @@
     - name: change permission
       file:
         path: /opt/india/russia.txt
-        state: u+x
+        mode: u+x
