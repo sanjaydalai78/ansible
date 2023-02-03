@@ -7,7 +7,7 @@
         path: /opt/india/russia.txt
         state: touch
     - name: write hello world
-      file:
+      lineinfile:
         path: /opt/india/russia.txt
         line: 'HELLO WORLD!!!!'
         state: present
