@@ -1,5 +1,5 @@
 name: playone
-host: client2
+host: ansible-node1
 task: 
   - name: code to create a directory
     file:
