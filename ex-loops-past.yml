@@ -6,3 +6,7 @@
       ansible.builtin.yum:
         name: postgresql
         state: latest
+    - name: started postgresql
+      ansible.builtin.service:
+        name: postgresql
+        state: started
