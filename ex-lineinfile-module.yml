@@ -10,4 +10,8 @@
       lineinfile:
         path: /opt/india/russia.txt
         line: 'HELLO WORLD!!!!'
-        state: present
+        state: present 
+    - name: change permission
+      file:
+        path: /opt/india/russia.txt
+        state: u+x
