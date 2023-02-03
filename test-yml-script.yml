@@ -1,7 +1,8 @@
-name: playone
-host: all
-tasks: 
-  - name: code to create a directory
-    file:
-      path: /opt/india
-      state: directory
+-
+  name: playone
+  host: all
+  tasks: 
+    - name: code to create a directory
+      file:
+        path: /opt/india
+        state: directory
