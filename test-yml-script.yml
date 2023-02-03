@@ -1,6 +1,6 @@
 name: playone
-host: ansible-node1
-task: 
+host: all
+tasks: 
   - name: code to create a directory
     file:
       path: /opt/india
