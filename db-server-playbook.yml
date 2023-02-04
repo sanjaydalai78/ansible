@@ -10,7 +10,7 @@
       with_items:
         - bash
         - openssl
-        - libssl-dev
+        - openssl-dev
         - libssl-doc
     - name: Install PostgreSQL 
       yum: name={{ item }} update_cache=true state=present
