@@ -2,7 +2,7 @@
   name: pb on use case of loops
   hosts: all
   tasks:
-    - name: install postgresql
+    - name: install process postgresql
       ansible.builtin.yum:
         name: postgresql
         state: latest
