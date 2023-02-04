@@ -17,7 +17,7 @@
         - postgresql
         - postgresql-contrib
         - openssl-devel
-        - python3-psycopg2
+        - python-psycopg2
     - name: Ensure the PostgreSQL service is running
       service: name=postgresql state=started enabled=yes
     - name: Create the database specified in vars
