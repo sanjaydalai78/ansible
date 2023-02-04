@@ -5,7 +5,7 @@
     - name: install process postgresql
       ansible.builtin.yum:
         name: postgresql
-        state: absent
+        state: remove
     - name: started postgresql
       ansible.builtin.service:
         name: postgresql
