@@ -11,3 +11,6 @@
       copy: 
         src: /home/sanjay/jenkins/workspace/sample_maveen_project/webapp/target/webapp.war
         dest: /root/sample_maveen_project/lib     
+        owner: root
+        group: root        
+        mode: 0644
