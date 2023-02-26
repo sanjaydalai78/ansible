@@ -4,5 +4,5 @@
   tasks: 
     - name: code to create a directory
       file:
-        path: /opt/india
+        path: /opt/india2
         state: directory
