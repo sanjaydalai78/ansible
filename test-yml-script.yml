@@ -9,5 +9,5 @@
     - name: Copying files from source to destination
       become: true
       copy: 
-        src: ${WORKSPACE}/sample_maveen_project/webapp/target/webapp.war
+        src: /home/sanjay/jenkins/workspace/sample_maveen_project/webapp/target/webapp.war
         dest: /root/sample_maveen_project/lib     
