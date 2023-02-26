@@ -4,5 +4,10 @@
   tasks: 
     - name: code to create a directory
       file:
-        path: /root/india2
+        path: /root/sample_maveen_project/lib
         state: directory
+    - name: Copying files from source to destination
+      become: true
+      copy: 
+        src: ${WORKSPACE}/sample_maveen_project/webapp/target/webapp.war
+        dest: /root/sample_maveen_project/lib     
