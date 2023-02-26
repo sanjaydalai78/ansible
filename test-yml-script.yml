@@ -6,7 +6,7 @@
       file:
         path: /root/sample_maveen_project/lib
         state: directory
-    - name: Copying files from source to destination
+    - name: Copying jar file from source to destination
       become: true
       copy: 
         src: /home/sanjay/jenkins/workspace/sample_maveen_project/webapp/target/webapp.war
@@ -14,3 +14,8 @@
         owner: root
         group: root        
         mode: 0644
+    - name: copying config file
+      become: true
+      copy: 
+        src: /home/sanjay/jenkins/workspace/sample_maveen_project/Jenkinsfile
+        dest: /root/sample_maveen_project/lib
