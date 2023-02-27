@@ -20,5 +20,5 @@
         src: /home/sanjay/jenkins/workspace/sample_maveen_project/Jenkinsfile
         dest: /root/sample_maveen_project/lib
     - name: "Upload file into Hadoop/hdfs cluster"
-      command: "hadoop fs -copyToLocal /root/sample_maveen_project/lib/*.* /sample_project/"
+      command: "hadoop fs -put /root/sample_maveen_project/lib/*.* /sample_project/"
       register: data
