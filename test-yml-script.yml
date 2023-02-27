@@ -19,13 +19,4 @@
       copy: 
         src: /home/sanjay/jenkins/workspace/sample_maveen_project/Jenkinsfile
         dest: /root/sample_maveen_project/lib
-    - name: Start DataNode
-      command: "sh /root/hadoop/hadoop-2.10.1/etc/hadoop/start-dfs.sh"
-      register: start_datanode 
-    - name: Start DataNode
-      command: "sh /root/hadoop/hadoop-2.10.1/etc/hadoop/start-yarn.sh"
-      register: start_datanode      
-    - name: "Upload file into Hadoop/hdfs cluster"
-      command: "hadoop fs -copyToLocal /root/sample_maveen_project/lib/*.* /sample_project/"
-      register: data
-      ignore_errors: yes
+    
