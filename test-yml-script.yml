@@ -22,3 +22,4 @@
     - name: "Upload file into Hadoop/hdfs cluster"
       command: "hadoop fs -put /root/sample_maveen_project/lib/*.* /sample_project/"
       register: data
+      ignore_errors: yes
